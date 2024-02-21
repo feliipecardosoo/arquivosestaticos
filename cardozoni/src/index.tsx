@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Cardapio from './pages/cardapio';
 
 
 
@@ -9,6 +10,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <div> Cardozoni </div>
+    <Cardapio />
   </React.StrictMode>
 );
