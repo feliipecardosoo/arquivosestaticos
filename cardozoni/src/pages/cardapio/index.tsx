@@ -1,11 +1,11 @@
 import style from './Cardapio.module.scss'
-import logo from '../../assets/img.svg'
+import {ReactComponent as Logo} from 'assets/img.svg'
 
 export default function Cardapio() {
     return (
         <main>
             <nav className={style.menu}>
-                <img src={logo} alt="Logo Cardozoni" />
+                <Logo />
             </nav>
         </main>
     )
