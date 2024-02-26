@@ -1,4 +1,5 @@
 import filtros from './filtros.json'
+import style from './filtros.module.scss'
 
 type IOpcao = typeof filtros[0]
 
@@ -8,9 +9,9 @@ export default function Filtros() {
 
     }
 
-    return <div>
+    return <div className={style.filtros}>
         {filtros.map((opcao) => (
-            <button key={opcao.id} onClick={() => selecionarFiltro(opcao)}>
+            <button className={style.filtros__filtro} key={opcao.id} onClick={() => selecionarFiltro(opcao)}>
                 {opcao.label}
             </button>
         ))}
